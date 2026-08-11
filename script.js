@@ -2,7 +2,7 @@
 
 /* ============ DATA ============ */
 const forms = [
-    { id:"warranty-card", code:"FRM–001", category:"Warranty", title:"Warranty Repair Payment Voucher", description:"A voucher form used to authorize and process warranty repair payments for eligible products.", url:"./resources/forms/warranty_repair_payment_voucher.html" },
+    { id:"warranty-card", code:"WCFRM–01", category:"Warranty", title:"Warranty Repair Payment Voucher", description:"A voucher form used to authorize and process warranty repair payments for eligible products.", url:"./resources/forms/warranty_repair_payment_voucher.html" },
 
     // [example registration forms]
     // { id:"extended-warranty", code:"FRM–002", category:"Warranty", title:"Extended Warranty Registration", description:"Registration form for customers extending coverage beyond the standard warranty term.", url:"./forms/extended-warranty-registration.html" },
