@@ -4,7 +4,7 @@
 const forms = [
     {
         id: "warranty-card",
-        code: "WCFRM–01",
+        code: "FRM–01",
         category: "Warranty",
         title: "Warranty Repair Payment Voucher",
         description: "A voucher form used to authorize and process warranty repair payments for eligible products.",
@@ -12,8 +12,8 @@ const forms = [
     },
     {
         id: "service-repair-invoice",
-        code: "INVFRM–01",
-        category: "Invoice",
+        code: "FRM–02",
+        category: "Service",
         title: "Service / Repair Invoice",
         description: "A standard invoice form used to record customer details, service work performed, itemized repair charges, and payment confirmations.",
         url: "./resources/forms/service_repair_invoice.html"
@@ -94,50 +94,6 @@ function docPreview(category){
         <div class="doc-line w-60"></div>
         <div class="doc-line short"></div>
         </div>`;
-    case "Invoice":
-        return `<div class="doc-sheet">
-        <div class="doc-head">
-            <div class="doc-title" style="width:48%"></div>
-            <div class="doc-title" style="width:22%"></div>
-        </div>
-        <div class="doc-field-row">
-            <div class="doc-field">
-                <span class="doc-label"></span>
-                <span class="doc-box"></span>
-            </div>
-            <div class="doc-field">
-                <span class="doc-label short"></span>
-                <span class="doc-box"></span>
-            </div>
-        </div>
-        <div class="doc-line"></div>
-        <div class="doc-line w-60"></div>
-        <div class="doc-table">
-            <span class="head"></span>
-            <span class="head"></span>
-            <span class="head"></span>
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="doc-total"><i></i></div>
-        <div class="doc-total"><i></i></div>
-
-        <div class="doc-bottom">
-            <span class="doc-sig"></span>
-            <span class="doc-sig"></span>
-        </div>
-    </div>`;
     default:
         return `<div class="doc-sheet"><div class="doc-line"></div><div class="doc-line w-60"></div></div>`;
     }
