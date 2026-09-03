@@ -181,7 +181,7 @@ filtersEl.addEventListener("click", (e) => {
 });
 
 
-const featured = forms.find(f => f.id === "warranty-card") || forms[0];
+const featured = forms[forms.length - 1]; // last form in the list
 document.getElementById("featured-preview").innerHTML = docPreview(featured.category);
 document.getElementById("featured-eyebrow-cat").textContent = featured.category;
 document.getElementById("featured-title").textContent = featured.title;
