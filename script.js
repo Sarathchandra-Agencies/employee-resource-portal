@@ -100,21 +100,23 @@ function docPreview(category){
 }
 
 /* CARD TEMPLATE */
-function cardTemplate(form, index){
-    return `<article class="card reveal" style="transition-delay:${(index % 4) * 55}ms">
-    <a class="card-link" href="${form.url}" target="_blank">
-        <div class="card-preview">${docPreview(form.category)}</div>
-        <div class="card-body">
+function cardTemplate(form, index) {
+  return `<article class="card reveal" style="transition-delay:${(index % 4) * 55}ms">
+    <a class="card-link" href="${form.url}" target="_blank" rel="noopener noreferrer">
+      <div class="card-preview">${docPreview(form.category)}</div>
+      <div class="card-body">
         <span class="card-eyebrow">${form.category}</span>
         <h3 class="card-title">${form.title}</h3>
         <p class="card-desc">${form.description}</p>
         <div class="card-foot">
-            <span class="doc-code">${form.code}</span>
-            <span class="open-link">Open Form <span class="arrow" aria-hidden="true">↗</span></span>
+          <span class="doc-code">${form.code}</span>
+          <span class="open-link">
+            Open Form <span class="arrow" aria-hidden="true">↗</span>
+          </span>
         </div>
-        </div>
+      </div>
     </a>
-    </article>`;
+  </article>`;
 }
 
 /* REVEAL OBSERVER */
