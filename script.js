@@ -102,7 +102,7 @@ function docPreview(category){
 /* CARD TEMPLATE */
 function cardTemplate(form, index){
     return `<article class="card reveal" style="transition-delay:${(index % 4) * 55}ms">
-    <a class="card-link" href="${form.url} target="_blank">
+    <a class="card-link" href="${form.url}" target="_blank">
         <div class="card-preview">${docPreview(form.category)}</div>
         <div class="card-body">
         <span class="card-eyebrow">${form.category}</span>
